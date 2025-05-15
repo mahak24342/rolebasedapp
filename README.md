@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Role-Based Authentication App
+
+This is a web application that implements role-based authentication using Google Sign-In. After login, users choose a role—**Admin** or **Guest**—and are directed to a customized interface based on that role.
+
+- **Admins** can perform full CRUD operations on user data.
+- **Guests** can only view the data entered by admins.
+
+The application features a clean, responsive design suitable for both desktop and mobile devices, with secure authentication and role-based access control.
+
+## Live Link
+
+- **App URL**: [https://rolebasedapp.vercel.app](https://rolebasedapp.vercel.app)  
+- **GitHub Repository**: [https://github.com/mahak24342/rolebasedapp](https://github.com/mahak24342/rolebasedapp)
+
+## Features
+
+- Google Sign-In with Firebase Authentication
+- Role selection after login: Admin or Guest
+- Personalized welcome screen based on role
+- Admin Dashboard:
+  - Add new user entries (Name, Address, PIN, Phone Number)
+  - View, update, and delete entries
+- Guest Dashboard:
+  - Read-only access to all entries
+- Secure logout
+- Mobile-first, responsive UI
+
+## Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Authentication & Backend**: Firebase (Google OAuth + Realtime Database)
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/mahak24342/rolebasedapp.git
+cd rolebasedapp
